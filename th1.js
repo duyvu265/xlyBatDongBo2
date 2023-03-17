@@ -8,11 +8,11 @@ async function getsum(arr){
 }
 async function f(){
     try{
-        let result=await getsum([2,3,4,6]);
+        let result=await getsum(9);
         console.log(result);
     }
     catch (error){
-        console.log(error);
+        console.log(error.message);
     }
 }
 f();
